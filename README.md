@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/kentsouls/kentsouls.GitHub.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+##欢迎来到GitHub Pages
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+您可以使用GitHub 上的编辑器来维护和预览Markdown文件中网站的内容。
+每当您提交到此存储库时，GitHub Pages 都会运行Jekyll，从Markdown 文件中的内容重建站点中的页面。
 
-### Markdown
+#Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown是—种轻量级且易于使用的语法，用于设置写作样式。它包括
+syntax highlighted code block
 
-```markdown
-Syntax highlighted code block
+#Header 1
 
-# Header 1
-## Header 2
-### Header 3
+tHeader 2lltHeader 3
+- Bulleted- List
+1. Nurmbered2. List
+Bold* and _itatic_ and "code` text[Link](url) and ![Image]( src)
 
-- Bulleted
-- List
+有关更多详细信息，请参阅基本编写和格式设置语法。
 
-1. Numbered
-2. List
+##杰基尔主题
 
-**Bold** and _Italic_ and `Code` text
+您的Pages 文稿网站将使用您在存储库设置中选择的Jekll主题中的布局和样式。此主题的名称保存在Je k l_配置文件中。_config ym
+支持或联系
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kentsouls/kentsouls.GitHub.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#使用主页时遇到问题?请查看我们的文档或联系支持人员，我们将帮助您解决问题。
