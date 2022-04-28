@@ -1,1 +1,228 @@
-你好世界
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>豆瓣top25电影列表</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="static/assets/images/favicon.png" type="image/png">
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="static/assets/css/animate.css">
+
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="static/assets/css/magnific-popup.css">
+
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="static/assets/css/slick.css">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="static/assets/css/LineIcons.css">
+
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="static/assets/css/font-awesome.min.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="static/assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="static/assets/css/style.css">
+
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="temp.html">
+                                <a  alt="电影节"></a>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="/index">首页</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/movie">电影列表</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/score">评分</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/word">词云</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/team">团队</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+
+                            <div class="navbar-btn d-none d-sm-inline-block">
+                                <a class="main-btn" data-scroll-nav="0" href="#pricing">敬请使用</a>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+   <!--====== TEAM PART START ======-->
+
+    <section id="team" class="team-area pt-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="section-title text-center pb-30">
+                        <div class="line m-auto"></div>
+                        <h3 class="title"><span>豆瓣电影top250数据详单</span></h3>
+                    </div> <!-- section title -->
+                </div>
+                        </div>
+                    </div> <!-- single team -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== TEAM PART ENDS ======-->
+
+
+    <!--====== SERVICES PART START ======-->
+
+    <section id="features" class="services-area pt-20">
+        <div class="container">
+           <table class="table table-striped">
+               <tr>
+                   <td>排名</td>
+                   <td>电影中文名称</td>
+                   <td>电影外国名称</td>
+                   <td>评分</td>
+                   <td>评价人数</td>
+                   <td>其他信息</td>
+               </tr>
+               {% for movie in movies %}
+                   <tr>
+                       <td>{{movie[3]}}</td>
+                       <td>
+                           <a href="{{movie[1]}}" target="_blank">
+                           {{movie[3]}}
+                               </a>
+                       </td>
+
+                        <td>{{movie[4]}}</td>
+                        <td>{{movie[5]}}</td>
+                        <td>{{movie[6]}}</td>
+                        <td>{{movie[7]}}</td>
+                    </tr>
+
+
+               {% endfor %}
+           </table>
+        </div> <!-- container -->
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area pt-120">
+        <div class="container">
+
+        <div id="particles-2"></div>
+           </div>
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== PART START ======-->
+
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-"></div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!--====== PART ENDS ======-->
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="static/assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="static/assets/js/popper.min.js"></script>
+    <script src="static/assets/js/bootstrap.min.js"></script>
+
+    <!--====== Plugins js ======-->
+    <script src="static/assets/js/plugins.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="static/assets/js/slick.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="static/assets/js/ajax-contact.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="static/assets/js/waypoints.min.js"></script>
+    <script src="static/assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="static/assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="static/assets/js/jquery.easing.min.js"></script>
+    <script src="static/assets/js/scrolling-nav.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="static/assets/js/wow.min.js"></script>
+
+    <!--====== Particles js ======-->
+    <script src="static/assets/js/particles.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="static/assets/js/main.js"></script>
+    
+</body>
+
+</html>
